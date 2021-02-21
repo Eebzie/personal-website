@@ -5,76 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/bunn.jpg">
-    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Gabby Agustin: Personal Website</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
-    body{
-        font-family: 'Manrope', sans-serif;
-        --header-height: 50px;
-        margin: var(--header-height) 0 0 0;
-        background-color: #eee;
-    }
-    .header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: var(--header-height);
-        max-height: 50px;
-        background:#fff;
-        display: flex;
-        justify-content: space-be;
-        padding: 5px 5px;
-    }
-    .title{
-        margin-left: 10px;
-        line-height: 15px;
-        font-size: 20px;
-    }
-    main{
-        position: absolute;
-        left: 30%;
-        top: 20%;
-    }
-
-    h2{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: normal;
-    }
-
-    span{
-        letter-spacing: 30px;
-        color: #ddd;
-    }
-
-    footer{
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-    }
-    </style>
 </head>
 <body>
     <header class="header">
-        <img src="assets/bunn-noBG.png" alt="Gabby Agustin's original bunny logo" class="logo">
-        <p class="title">G A B B Y</h1>
-        <div></div>
+        <img class="logo" src="assets/bunn-noBG.png" alt="Gabby Agustin's original bunny logo" >
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="">About</a></li>
+                <li class="nav-link"><a href="">Projects</a></li>
+                <li class="nav-link"><a href="">Resume</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="" ><button>Contact</button></a>
     </header>
 
     <main>
+        <img src="assets/roll.gif" alt="">
         <h1>Hi, I'm Gabby! 💐</h1>
         <h2>This website is currently a WIP, so please check back when we're done!</h2>
-    </main>
-    
-    <span>
-        \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-    </span>
-    
-    <footer>
-        <span>
-            \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-        </span> 
-    </footer>
+    </main> 
 </body>
 </html>
