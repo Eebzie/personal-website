@@ -2,12 +2,19 @@
 :root{
     /*===== Colours =====*/
     --main-color:  #a065a0;
-    --dark-color: #eee;
+    --dark-color: #EEE;
     --dark-color-alt: #46887E;
-    --white-color: #FFFFFF;
+    --white-hex: #FFF;
+    --black-hex: #000;
     --button-color: #F5B129;
 }
 
+.light{
+    --bg-color: var(--main-color);
+    --text-color: var(--main-color);
+    --main-color: var(--main-color);
+    --secondary-color: var(--main-color);
+}
 
 * {
     box-sizing: border-box;
@@ -19,7 +26,7 @@ li, a, button {
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     font-size: 16px;
-    color: rgb(80, 80, 80);
+    color: #505050;
     text-decoration: none;
 }
 
@@ -28,7 +35,7 @@ body{
     font-family: 'Manrope', sans-serif;
     --header-height: 50px;
     /* margin: var(--header-height) 0 0 0; */
-    background-color: #eee;
+    background-color: #EEE;
 
 }
 
