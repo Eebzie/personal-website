@@ -10,17 +10,27 @@
     <link rel="stylesheet" href="styles.css">
     <title>Gabby Agustin: Personal Website</title>
 </head>
-<body>
+<body class="preload light">
+    <script>
+        fetch("projects.json")
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector("#project-name").innerText = data.name;
+                document.querySelector("#project-description").innerText = data.description;
+            })
+
+    </script>
     <header class="header">
         <div class="logo-container">
-            <img class="logo" src="assets/bunn-noBG.png" alt="Gabby Agustin's original bunny logo" >
+            <a href="index.html"><img class="logo" src="assets/bunn-noBG.png" alt="Gabby Agustin's original bunny logo" ></a>
             <h4 class="logo-name">GABBY</h4>
         </div>
         <nav class="navigation">
             <ul class="nav-links">
                 <li class="nav-link"><a href="#about">About</a></li>
-                <li class="nav-link"><a href="#projects">Projects</a></li>
-                <li class="nav-link"><a href="#resume">Resume</a></li>
+                <!-- <li class="nav-link"><a href="#projects">Projects</a></li> -->
+                <li class="nav-link"><a href="#skills">Skills</a></li>
+                <li class="nav-link"><a href="#timeline">Timeline</a></li>
             </ul>
             <!-- <div class="burger">
                 <div class="burger-line1"></div>
@@ -28,19 +38,100 @@
                 <div class="burger-line3"></div>
             </div> -->
         </nav>
-        <a class="cta" href="mailto:gabrielle.agustin@gmail.com" ><button>Contact</button></a>
+        <button style="background-color: white;"onclick="dark_mode_toggle()"></button>
+        <!-- <a class="cta" href="mailto:gabrielle.agustin@gmail.com" ><button>Contact</button></a> -->
     </header>
-
-    <main>
-        <img src="assets/roll.gif" alt="">
-        <h1>Hi, I'm Gabby! 💐😍🙂</h1>
-        <h2>This website is currently a WIP, so please check back when we're done!</h2>
-    </main> 
-    <section id="content-wrap">
+    <section id="header-waves">
         <div class="wave wave1"></div>
         <div class="wave wave2"></div>
         <div class="wave wave3"></div>
     </section>
-    <footer style="background-color: white;"></footer>
+    <main class="main-wrapper">
+        <div style="display:flex; justify-content: center;">
+            <img style="height:300px; width: 300px;"src="assets/roll.gif" alt="bunny rolling">
+            <h1 style="font-size: 50px; margin-top: 150px;">Hi, I'm Gabby! 💐🙂 Welcome to my website!</h1>
+        </div>
+        <!-- <h2>This website is currently a WIP, so please check back when we're done!</h2>  -->
+        <div id="about" class="content-wrapper" >
+            <h1>About Me</h1>
+            <p>Hi, I'm Gabby! Welcome to my website! dedicated to my hobbies, projects, personal and professional growth! This website is to serve as a personal portfolio to showcase my interests, hobbies, and skills. It is dedicated to showcasing my projects to demonstrate personal and professional growth. My target audience is for people who would be interested in me: whether that be future employers, friends, or people who are curious about my current projects.
+            </p>
+            <p> I am based in Durham and have experience in image processing, signal processing, graphic design, and frontend web development. </p>
+            <p>I decided to use this site development platform as a way to learn and improve my web development knowledge. Using plain HTML, CSS, and JS allows for me to have more control, but a major con is the steep learning curve for certain features as well as this method is quite time-consuming. In the future I’d love to improve my website by using React.js to make it more component-based, standard practice, and more responsive.</p>
+            <a style="display: block;"class="cta" href="https://drive.google.com/file/d/1UHK3uF1e-x_GwJfuW3uDG4lAylb88KlP/view"><button>Resume</button></a>
+        </div>
+        <!-- <div class="projects">
+            <h1>Projects</h1>
+            <div id="project-name"></div>
+            <div id="project-description"></div>
+        </div> -->
+        
+        <div id="skills" class="content-wrapper">
+            <h1>Skills</h1>
+            <ul>Web Development: HTML, CSS, JS, React.js</ul>
+            <ul>Programming: MATLAB, C/C++, Java, Python</ul>
+            <ul>Misc: Adobe Photoshop, Adobe Illustrator, GIT, Microsoft Office</ul>
+        </div>
+        <div id="timeline" class="accordion content-wrapper">
+            <h1>Timeline</h1>
+            <div class="contentBx">
+                <h2 class="label">2021</h2>
+                <div class="content">
+                    <h3>Graphic Designer at RU Hacks</h3>
+                    <li>Designed multiuse social media graphics using Photoshop and Illustrator for use in newsletters and Instagram posts and stories</li>
+                </div>
+            </div>
+            <div class="contentBx">
+                <h2 class="label">2020</h2>
+                <div class="content">
+                    <h3>VP Operations at RU Hacks</h3>
+                    <li>Coordinated food vendors, event room and accommodation booking</li>
+                    <h3>VP Marketing at Ryerson BMES</h3>
+                    <li>Created project proposal documentation for clarity of tasks, deliverables,
+                        and deadlines needed from designers and marketers</li>
+                </div>
+            </div>
+            <div class="contentBx">
+                <h2 class="label">2019</h2>
+                <div class="content">
+                    <h3>Project Management Intern at SAS Canada</h3>
+                    <li>Developed an optimized delivery methodology training deck for use during on-boarding and as reference material</li>
+                    <h3>VP Internal Relations at RU Hacks</h3>
+                    <li>Organized volunteer recruitment and task management
+                        to sufficiently support 3-day hackathon event</li>
+                    <h3>Director of Marketing at Ryerson BMES</h3>
+                    <li>Designed graphics using Photoshop for business cards, social
+                        media posts, event posters, and event banner</li>
+                </div>
+            </div>
+            <div class="contentBx">
+                <h2 class="label">2018</h2>
+                <div class="content">
+                    <h3>Marketing Intern at SAS Canada</h3>
+                    <li>Automated and optimized the reallocation of advertisement campaign invoices by using SAS® 9.4 to create a consistent and efficient environment for receiving invoices</li>
+                </div>
+            </div>
+        </div>
+        <div class="hobbies">
+            <img src="https://www.instagram.com/p/CJhF0c3D099/?utm_source=ig_web_copy_link" alt="">
+        </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </main> 
+    <section id="footer-waves">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </section>
+    <!-- <footer style="background-color: white;"></footer> -->
+    <script src="app.js"></script>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+        
+        for (i=0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active');
+            })
+        }
+    </script>
 </body>
 </html>
