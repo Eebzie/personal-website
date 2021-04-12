@@ -16,7 +16,7 @@
 .light{
     --bg-color: var(--bg-color-light);
     --container-color: var(--white-hex);
-    --text-color: var(var(--black-hex));
+    --text-color: var(--black-hex);
     --secondary-color: var(--main-color);
 }
 
@@ -137,7 +137,24 @@ main{
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin: 50px 20%;
+   padding: 30px 50vh;
+}
+@media screen and (max-width: 1440px){
+    main{
+        padding: 30px 15vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        padding: 30px 5vh;
+    }
+}
+
+@media screen and (max-width: 425px){
+    main{
+        padding: 30px 2vh;
+    }
 }
 
 .main-wrapper{
@@ -156,7 +173,6 @@ main{
     filter: drop-shadow(3px 3px 6px var(--gray-hex-transparent));
     gap: 50px;
 }
-
 h1{
     font-family: 'Manrope', sans-serif;
     color: var(--text-color);
@@ -169,6 +185,12 @@ h2{
 
 p{
     margin: 25px 0px;
+    font-size: 20px;
+}
+
+.resume{
+    display: flex; 
+    justify-content: center;
 }
 
 .accordion .contentBx{
@@ -197,7 +219,9 @@ p{
 .accordion .contentBx .content{
     position: relative;
     background: var(--theme-color-transparent);
-    border-radius: 0 0 10px 10px;
+    border: var(--theme-color);
+    border-width: 5px;
+    border-radius: 0 0 10px 0;
     height: 0;
     overflow: hidden;
     transition: 3.5s ease-in-out;
@@ -209,16 +233,20 @@ p{
 }
 .accordion .contentBx.active .label{
     border-radius: 10px 10px 0 0;
+    color: var(--theme-color);
 }
 
 .accordion .contentBx.active .content{
     height: auto;
     color: #111;
     padding: 10px;
+    border: var(--theme-color) solid;
+    border-width: 0 0 0 4px;
 }
 
 h3{
     margin-top: 10px;
+    color: var(--text-color);
 }
 /* ===== WAVE BG =====*/
 section{
