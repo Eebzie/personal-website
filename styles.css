@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 /*===== VARIABLES CSS =====*/
 :root{
     /*===== Colours =====*/
@@ -95,7 +97,7 @@ body{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: var(--main-color);
+    background-color: var(--gray-hex);
     margin: 5px;
 }
 .nav-links{
@@ -193,6 +195,40 @@ p{
     justify-content: center;
 }
 
+.project-wrapper{
+    display: flex;
+    flex-direction: column;
+    border: var(--gray-hex-transparent) solid;
+    border-width: 0 0 0 4px;
+    padding: 20px;
+}
+
+.project-wrapper:hover{
+    border: var(--theme-color) solid;
+    border-width: 0 0 0 4px;
+}
+
+.project-logo{
+    height: auto;
+}
+
+.tools{
+    display: flex;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.tools li{
+    display: block;
+    list-style: none;
+    border-radius: 3px;
+    color: var(--white-hex);
+    background-color: var(--theme-color);
+    text-align: center;
+    font-weight: lighter;
+    padding: 5px;
+    margin: 5px;
+}
+
 .accordion .contentBx{
     position: relative;
     margin: 10px 20px;
@@ -208,7 +244,7 @@ p{
 }
 
 .accordion .contentBx .label::before{
-    content: '+';
+    content: '▼';
     position: absolute;
     top: 50%;
     right: 20px;

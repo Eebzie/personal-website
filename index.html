@@ -5,21 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/bunn.jpg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Gabby Agustin: Personal Website</title>
 </head>
 <body class="preload light">
-    <script>
+    <!-- <script>
         fetch("projects.json")
             .then(response => response.json())
             .then(data => {
                 document.querySelector("#project-name").innerText = data.name;
                 document.querySelector("#project-description").innerText = data.description;
             })
-
-    </script>
+    </script> -->
     <header class="header">
         <div class="logo-container">
             <a href="index.html"><img class="logo" src="assets/bunn-noBG.png" alt="Gabby Agustin's original bunny logo" ></a>
@@ -28,7 +25,7 @@
         <nav class="navigation">
             <ul class="nav-links">
                 <li class="nav-link"><a href="#about">About</a></li>
-                <!-- <li class="nav-link"><a href="#projects">Projects</a></li> -->
+                <li class="nav-link"><a href="#projects">Projects</a></li>
                 <li class="nav-link"><a href="#skills">Skills</a></li>
                 <li class="nav-link"><a href="#timeline">Timeline</a></li>
             </ul>
@@ -48,8 +45,8 @@
     </section>
     <main class="main-wrapper">
         <div style="display:flex; justify-content: center;">
-            <img style="height:300px; width: 300px;"src="assets/roll.gif" alt="bunny rolling">
             <h1 style="font-size: 50px; margin-top: 150px;">Hi, I'm Gabby! 💐🙂 Welcome to my website!</h1>
+            <img style="height:300px; width: 300px;"src="assets/roll.gif" alt="bunny rolling">
         </div>
         <!-- <h2>This website is currently a WIP, so please check back when we're done!</h2>  -->
         <div id="about" class="content-wrapper" >
@@ -66,12 +63,115 @@
             <div id="project-description"></div>
         </div> -->
         
+        <!-- <div id="projects" class="content-wrapper">
+            <h1>Projects</h1>
+            <div class="projects-wrapper">
+                <h2 class="label">2021</h2>
+                <div class="project-wrapper">
+                    <div class="right">
+                        <h3>Graphic Designer at RU Hacks</h3>
+                        <li>Designed multiuse social media graphics using Photoshop and Illustrator for use in newsletters and Instagram posts and stories</li>
+                    </div>
+                </div>
+                <h2 class="label">2020</h2>
+                <div class="project-wrapper">
+                    <div class="left"><img class="project-logo" src="" alt=""></div>
+                    <div class="right">
+                        <h3>VP Operations at RU Hacks</h3>
+                        <li>Coordinated food vendors, event room and accommodation booking</li>
+                        <h3>VP Marketing at Ryerson BMES</h3>
+                        <li>Created project proposal documentation for clarity of tasks, deliverables,
+                        and deadlines needed from designers and marketers</li>
+                    </div>
+                </div>
+                <h2 class="label">2019</h2>
+                <div class="project-wrapper">
+                    <div class="left"><img class="project-logo" src="" alt=""></div>
+                    <div class="right">
+                        <h3>Project Management Intern at SAS Canada</h3>
+                        <li>Developed an optimized delivery methodology training deck for use during on-boarding and as reference material</li>
+                        <h3>VP Internal Relations at RU Hacks</h3>
+                        <li>Organized volunteer recruitment and task management
+                        to sufficiently support 3-day hackathon event</li>
+                        <h3>Director of Marketing at Ryerson BMES</h3>
+                        <li>Designed graphics using Photoshop for business cards, social
+                        media posts, event posters, and event banner</li>         
+                    </div>
+                </div>
+                <h2 class="label">2018</h2>
+                <div class="project-wrapper">
+                    <div class="left"><img class="project-logo" src="" alt=""></div>
+                    <div class="right">
+                        <h3>Marketing Intern at SAS Canada</h3>
+                        <li>Automated and optimized the reallocation of advertisement campaign invoices by using SAS® 9.4 to create a consistent and efficient environment for receiving invoices</li>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="projects" class="content-wrapper">
+            <h1>Projects</h1>
+            <div class="projects-wrapper">
+                <div class="project-wrapper">
+                    <div class="right">
+                        <h3>LIMB: Prosthetic Arm with Wireless Monitoring</h3>
+                        <h4>2020-2021</h4>
+                        <p>LIMB is a microcontroller (MCU) based prosthetic with a remote monitoring web app for below the elbow limb loss. It is designed to be lightweight, robust, and cost-effective. It is capable of different hand positions to aid in the user's daily functions, such as dressing, eating, and communication.</p>
+                    </div>
+                    <ul class="tools"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Flask</li><li>Heroku</li></ul>
+                </div>
+                <div class="project-wrapper">
+                    <div class="left"><img class="project-logo" src="" alt=""></div><img src="" alt="">
+                    <div class="right">
+                        <h3>iCal</h3>
+                        <h4>2021</h4>
+                        <p>iCal is a web app which deciphers images into google calendar events. Using Google's Cloud Vision API and OCR technology, iCal takes images of events (think poster or webpage screenshot) to create an event in your Google Calendar with the correct title, date, and description. In the future I hope to build this into a Chrome extension for acessibility and quality of life usage.</p>
+                    </div>
+                    <ul class="tools"><li>Google Cloud Vision API</li><li>Google Calendar API</li><li>JavaScript</li><li>Node.js</li><li>Discord.js</li><li>CSS</li></ul>
+                </div>
+                <div class="project-wrapper">
+                    <div class="left"><img class="project-logo" src="" alt=""></div><img src="" alt="">
+                    <div class="right">
+                        <h3>Coffee Compass</h3>
+                        <h4>2021</h4>
+                        <p>An app that helps you make the perfect cup of coffee by guiding your coffee brewing experience through different flavour profiles.</p>
+                    </div>
+                    <ul class="tools"><li>React.js</li><li>JavaScript</li><li>Node.js</li><li>Discord.js</li><li>CSS</li></ul>
+                </div>
+            </div>
+        </div>
         <div id="skills" class="content-wrapper">
             <h1>Skills</h1>
-            <ul>Web Development: HTML, CSS, JS, React.js</ul>
-            <ul>Programming: MATLAB, C/C++, Java, Python</ul>
-            <ul>Misc: Adobe Photoshop, Adobe Illustrator, GIT, Microsoft Office</ul>
+            <ul><span style="font-weight: bold;">Web Development: </span>HTML, CSS, JS, React.js</ul>
+            <ul><span style="font-weight: bold;">Programming: </span>MATLAB, C/C++, Java, Python</ul>
+            <ul><span style="font-weight: bold;">Misc: </span>Adobe Photoshop, Adobe Illustrator, GIT, Microsoft Office</ul>
         </div>
+        <!-- <div id="timeline" class="accordion content-wrapper">
+            <h1>Timeline</h1>
+            <div class="contentBx">
+                <h2 class="label">LIMB: Prosthetic Arm with Wireless Monitoring</h2>
+                <div class="content">
+                    <h4>2020-2021</h4>
+                    <p>LIMB is a microcontroller (MCU) based prosthetic with a remote monitoring web app for below the elbow limb loss. It is designed to be lightweight, robust, and cost-effective. It is capable of different hand positions to aid in the user's daily functions, such as dressing, eating, and communication.</p>
+                    <ul class="tools"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Flask</li><li>Heroku</li></ul>
+                </div>
+            </div>
+            <div class="contentBx">
+                <h2 class="label">iCal</h2>
+                <div class="content">
+                        <h4>2021</h4>
+                        <p>iCal is a web app which deciphers images into google calendar events. Using Google's Cloud Vision API and OCR technology, iCal takes images of events (think poster or webpage screenshot) to create an event in your Google Calendar with the correct title, date, and description. In the future I hope to build this into a Chrome extension for acessibility and quality of life usage.</p>
+                        <ul class="tools"><li>Google Cloud Vision API</li><li>Google Calendar API</li><li>JavaScript</li><li>Node.js</li><li>Discord.js</li><li>CSS</li></ul>
+                </div>
+            </div>
+            <div class="contentBx">
+                <h2 class="label">Coffee Compass</h2>
+                <div class="content">
+                    <h4>2021</h4>
+                    <p>An app that helps you make the perfect cup of coffee by guiding your coffee brewing experience through different flavour profiles.</p>
+                    <ul class="tools"><li>React.js</li><li>JavaScript</li><li>Node.js</li><li>Discord.js</li><li>CSS</li></ul>
+                </div>
+            </div>
+        </div> -->
         <div id="timeline" class="accordion content-wrapper">
             <h1>Timeline</h1>
             <div class="contentBx">
@@ -122,7 +222,54 @@
         <div class="wave wave2"></div>
         <div class="wave wave3"></div>
     </section>
-    <!-- <footer style="background-color: white;"></footer> -->
+    <footer>
+        <div style="position: absolute; left: 37vw;">
+            <div class="button-container">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Eebzie">
+                    <button class="icon-btn">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </button>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielle-agustin/">
+                    <button class="icon-btn">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2">
+                        </svg>
+                    </button>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/eebzie/">
+                    <button class="icon-btn">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </button>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:gabrielle.agustin@gmail.com">
+                    <button class="icon-btn">
+                        <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </button>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1UHK3uF1e-x_GwJfuW3uDG4lAylb88KlP/view"><button class="icon-btn">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" stroke-linejoin="round" stroke-width="32" d="M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328"></path>
+                            <path fill="none" stroke-linejoin="round" stroke-width="32" d="M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z"></path>
+                            <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M240 128h64m-64 64h64m-192 64h192m-192 64h192m-192 64h192"></path>
+                            <path d="M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z"></path>
+                        </svg>
+                    </button>
+                </a>
+            </div>
+                Designed and <a href="https://github.com/Eebzie/personal-website" rel="noopener noreferrer" target="_blank" style="font-weight: 600; text-decoration: none;">developed</a> with <span style="white-space: nowrap;"> ❤️ by Gabrielle Agustin © 2021.</span>
+        </div>
+    </footer>
     <script src="app.js"></script>
     <script>
         const accordion = document.getElementsByClassName('contentBx');
