@@ -243,8 +243,12 @@ p{
     cursor: pointer;
 }
 
+.accordion .contentBx .label:hover{
+    color: #946094;
+}
+
 .accordion .contentBx .label::before{
-    content: '▼';
+    content: '+';
     position: absolute;
     top: 50%;
     right: 20px;
