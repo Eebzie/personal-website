@@ -264,6 +264,11 @@ p{
     overflow-y: auto;
 }
 
+.content li{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+}
+
 .accordion .contentBx.active .label::before{
     content: '-';
 }
